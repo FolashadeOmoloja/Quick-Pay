@@ -1,7 +1,19 @@
 "use client"
 import { motion } from 'framer-motion';
 
-const images = ['cta-stroke1.svg', 'cta-stroke2.svg', 'cta-stroke3.svg'];
+const images = [{
+    source:'cta-stroke1.svg',
+    height: '10px',
+    delay: 0
+},{
+    source:'cta-stroke2.svg',
+    height: '427px',
+    delay: 1
+},{
+    source:'cta-stroke3.svg',
+    height: '351px',
+    delay:2
+}];
 
 const ImageCarousel = () => {
   const imageVariants = {
@@ -12,16 +24,16 @@ const ImageCarousel = () => {
   const transition = { duration: 1, delay: 1, repeat: Infinity };
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} className='h-[272px]'>
-      {images.map((image, index) => (
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} >
+      {images.map((item, index) => (
         <motion.div
           key={index}
           initial="hidden"
           animate="visible"
           variants={imageVariants}
-          transition={transition}
+          transition={{ duration: 1, delay: item.delay, repeat: Infinity }}
         >
-          <img src={image} alt={`Image ${index + 1}`} width="300" height="200" />
+          <img src={item.source} alt={`Image ${index + 1}`}  height={item.height} />
         </motion.div>
       ))}
     </div>
