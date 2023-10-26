@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@keyframes loadingStroke-1 {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 50% {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingStroke-2 {
+  0%,25%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
+
+
+.ellipsis {
+  animation: loadingStroke-1 2s linear infinite;
+}
+
+.ellipsis2 {
+  animation: loadingStroke-2 2s linear infinite;
+}
+
 :root {
 
 }
