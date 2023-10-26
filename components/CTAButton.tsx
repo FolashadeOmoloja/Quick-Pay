@@ -17,7 +17,7 @@ const CTAButton = () => {
          {
             button.map((item,index)=>{
                 return     (
-                <div key={index} className='flex w-[177px] h-[55px] bg-white rounded-[40px] items-center justify-center'>
+                <div key={index} className='flex w-[177px] h-[55px] bg-white rounded-[40px] items-center justify-center cursor-pointer'>
                      <div>
                         <img src={item.img} alt="img" />
                      </div>

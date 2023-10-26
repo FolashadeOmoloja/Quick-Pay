@@ -31,7 +31,7 @@
 /* CTA ANIMATIONS*/
 
 :root {
-
+/* overflow-x: hidden; */
 }
 
 @media (prefers-color-scheme: dark) {
