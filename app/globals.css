@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/*CTA ANIMATIONS*/
 @keyframes loadingStroke-1 {
   0%, 100% {
     opacity: 0;
@@ -20,10 +20,6 @@
     opacity: 1;
   }
 }
-
-
-
-
 .ellipsis {
   animation: loadingStroke-1 2s linear infinite;
 }
@@ -31,6 +27,8 @@
 .ellipsis2 {
   animation: loadingStroke-2 2s linear infinite;
 }
+
+/* CTA ANIMATIONS*/
 
 :root {
 
