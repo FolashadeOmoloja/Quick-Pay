@@ -7,9 +7,9 @@ import TopStrokes from "./TopStrokes"
 
 const CTA = () => {
   return (
-    <section className='h-[500px] w-full bg-[#0083C7] mt-[60px] relative'>
-        <section>
-             <h3 className="text-white">Download QuickPay App Now!!</h3>
+    <section className='h-[500px] w-full bg-[#0083C7] mt-[60px] relative p-[70px]'>
+        <section className="">
+             <h3 className="text-white text-[50px] font-bold">Download QuickPay App <br /> Now!!</h3>
         </section>
          <div className="w-full h-full absolute top-0">
          <TopStrokes/>
