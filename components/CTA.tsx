@@ -14,7 +14,7 @@ const CTA = () => {
               <h3 className="text-white text-[50px] font-bold mb-[60px]">Download QuickPay App <br /> Now!!</h3>
                <CTAButton/>
               </section>
-              <section className="absolute top-[-170px] w-[350px] right-[20%]">
+              <section className="absolute top-[-100px] w-[350px] right-[20%]">
                 <img src="iPhone.svg" alt="" className="w-full" />
               </section>
         </section>
