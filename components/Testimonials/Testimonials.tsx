@@ -1,4 +1,6 @@
+'use client'
 import {BsStarFill } from 'react-icons/bs'
+import { useEffect, useState } from 'react'
 const users = [
 {
     img: 'user1.svg',
@@ -23,6 +25,17 @@ const users = [
 
 
 const Testimonials = () => {
+    const [view, changeView] = useState(false)
+    const [transitionClass, setTransitionClass] = useState('opacity-1 ease');
+    const handleClick = () => {
+        setTransitionClass("opacity-0");
+        setTimeout(() => {
+          setTransitionClass("opacity-1");
+        }, 150); 
+    
+        changeView(!view);
+      };
+
   return (
     <section  className="pt-[154px] bg-white pb-[100px] px-[72px] max-sm:p-[72px] max-xmd:p-[20px]">
        <section className="relative">
@@ -30,10 +43,10 @@ const Testimonials = () => {
              <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 max-sm:mx-auto"></div>
              <p className="text-[#565252] font-semibold mb-[52px] max-sm:text-center">What Our Users Say</p>
              <div className="flex gap-[80px] absolute right-0 top-[20px] max-sm:static max-sm:mb-7 ">
-                 <img src="leftbtn.svg" alt=""  className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto'/>
-                 <img src="rightbtn.svg" alt="" className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto'/>
+                 <img src="leftbtn.svg" alt=""  className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handleClick}/>
+                 <img src="rightbtn.svg" alt="" className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handleClick}/>
              </div>
-             <section className="flex gap-5 transition-all ease-in max-xlg:overflow-x-scroll h-[590px] items-center">
+              <section className={`flex gap-5  max-xlg:overflow-x-scroll h-[590px] items-center  ${view?'flex-row-reverse':''}  transition ${transitionClass}`}>
                  {users.map((user, index) => {
                    const stars = [];
              
@@ -43,14 +56,14 @@ const Testimonials = () => {
              
                    return (
                      <div
-                       className="relative flex flex-col text-center items-center p-6 pt-8 bg-[#F0F5F8] rounded-[20px] min-w-[350px] h-[428px] justify-between" // Adjust the minimum width for each user card
+                       className="relative flex flex-col text-center items-center p-6 pt-8 bg-[#F0F5F8] rounded-[20px] min-w-[350px] h-[428px] justify-between" 
                        key={index}
                      >
                        <div className="mt-[-110px] max-h-[200px] w-[140px] h-[140px]">
                          <img
                            src={user.img}
                            alt="img"
-                           className="max-h-[200px]" // Adjust the maximum height for the image
+                           className="max-h-[200px]" 
                          />
                        </div>
                        <span className="mt-5 font-bold">{user.user}</span>
@@ -60,9 +73,10 @@ const Testimonials = () => {
                    );
                  })}
              </section>
+                  {/* */}
 
+              </section>
         </section>
-    </section>
   )
 }
 
