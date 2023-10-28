@@ -22,13 +22,19 @@ const users = [
 const Testimonials = () => {
   return (
     <section  className="pt-[154px] bg-white pb-[243px] px-[72px]">
-      <h3 className="text-[50px] font-bold max-sm:text-[40px] max-xmd:text-center">Our Testimonial</h3>
-      <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6"></div>
-      <p className="text-[#565252] font-semibold mb-[50px]">What Our Users Say</p>
-      <section className="flex gap-5">
-        
-
-      </section>
+       <section className="relative">
+             <h3 className="text-[50px] font-bold max-sm:text-[40px] max-xmd:text-center">Our Testimonial</h3>
+             <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6"></div>
+             <p className="text-[#565252] font-semibold mb-[50px]">What Our Users Say</p>
+             <div className="flex gap-[80px] absolute right-0 top-[20px]">
+                 <img src="leftbtn.svg" alt="" />
+                 <img src="rightbtn.svg" alt="" />
+             </div>
+             <section className="flex gap-5">
+     
+                  
+           </section>
+        </section>
     </section>
   )
 }
