@@ -13,7 +13,7 @@ const button =[
 
 const CTAButton = () => {
   return (
-   <section className='flex gap-6 text-[#0045A5]'>
+   <section className='flex gap-6 text-[#0045A5] max-sm:flex-col'>
          {
             button.map((item,index)=>{
                 return     (

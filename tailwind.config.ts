@@ -13,6 +13,11 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      screens: {
+        'xsm': '375px',
+        'slg': '870px',
+        'xlg': '1250px'
+      },
     },
   },
   plugins: [],
