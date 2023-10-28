@@ -24,38 +24,43 @@ const users = [
 
 const Testimonials = () => {
   return (
-    <section  className="pt-[154px] bg-white pb-[243px] px-[72px]">
+    <section  className="pt-[154px] bg-white pb-[100px] px-[72px] max-sm:p-[72px] max-xmd:p-[20px]">
        <section className="relative">
-             <h3 className="text-[50px] font-bold max-sm:text-[40px] max-xmd:text-center">Our Testimonial</h3>
-             <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6"></div>
-             <p className="text-[#565252] font-semibold mb-[50px]">What Our Users Say</p>
-             <div className="flex gap-[80px] absolute right-0 top-[20px]">
-                 <img src="leftbtn.svg" alt="" />
-                 <img src="rightbtn.svg" alt="" />
+             <h3 className="text-[50px] max-md:text-[30px] font-bold max-sm:text-[40px] max-sm:text-center">Our Testimonial</h3>
+             <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 max-sm:mx-auto"></div>
+             <p className="text-[#565252] font-semibold mb-[52px] max-sm:text-center">What Our Users Say</p>
+             <div className="flex gap-[80px] absolute right-0 top-[20px] max-sm:static max-sm:mb-7 ">
+                 <img src="leftbtn.svg" alt=""  className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto'/>
+                 <img src="rightbtn.svg" alt="" className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto'/>
              </div>
-             <section className="flex gap-5">
-                 {
-                    users.map((user, index)=>{
-                        const stars = [];
+             <section className="flex gap-5 transition-all ease-in max-xlg:overflow-x-scroll h-[590px] items-center">
+                 {users.map((user, index) => {
+                   const stars = [];
+             
+                   for (let i = 0; i < 5; i++) {
+                     stars.push(<BsStarFill key={i} color="#FFA500" fontSize="24px" />);
+                   }
+             
+                   return (
+                     <div
+                       className="relative flex flex-col text-center items-center p-6 pt-8 bg-[#F0F5F8] rounded-[20px] min-w-[350px] h-[428px] justify-between" // Adjust the minimum width for each user card
+                       key={index}
+                     >
+                       <div className="mt-[-110px] max-h-[200px] w-[140px] h-[140px]">
+                         <img
+                           src={user.img}
+                           alt="img"
+                           className="max-h-[200px]" // Adjust the maximum height for the image
+                         />
+                       </div>
+                       <span className="mt-5 font-bold">{user.user}</span>
+                       <p className="text-[#656464] leading-[2]">{user.text}</p>
+                       <div className="flex gap-4 mb-[52px]">{stars}</div>
+                     </div>
+                   );
+                 })}
+             </section>
 
-                        for (let i = 0; i < 5; i++) {
-                            stars.push(<BsStarFill key={i} color="#FFA500" fontSize='24px' />);
-                          }
-
-                        return(
-                             <div className="relative flex flex-col" key={index}>
-                                  <div>
-                                     <img src={user.img} alt="img" />
-                                  </div>
-                                  <span>{user.user}</span>
-                                  <p>{user.text}</p>
-                                  <div className='flex gap-4'>{stars}</div>
-                             </div>
-                        )
-                    })
-                 }
-                  
-           </section>
         </section>
     </section>
   )
