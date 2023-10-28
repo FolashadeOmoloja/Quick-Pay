@@ -1,6 +1,5 @@
 "use client"
 import { useState, useEffect } from 'react';
-const displayTime = [0, 1000];
 
 const images = ['Arrow3.svg', 'Arrow2.svg'];
 const Arrrows = () => {
