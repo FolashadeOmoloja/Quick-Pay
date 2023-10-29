@@ -13,9 +13,9 @@
 
 
   .bg-gradient{
-    @apply bg-gradient-to-r from-[#CDE6F3] to-[#F8F8F9]
+    @apply bg-gradient-to-r from-[#CDE6F3] via-[#F8F8F9] to-[#F8F8F9]
   }
-  .bo
+  
 
   .iphone-cta{
     @apply absolute top-[-100px] w-[350px] right-[20%] max-xlg:right-[10%] max-xlg:w-[200px] max-xlg:top-[70px]  max-slg:w-[150px] max-slg:top-[170px] max-md:right-[9%]  max-md:top-[140px] max-xmd:hidden
