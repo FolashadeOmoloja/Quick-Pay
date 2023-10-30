@@ -20,6 +20,14 @@
   .iphone-cta{
     @apply absolute top-[-100px] w-[350px] right-[20%] max-xlg:right-[10%] max-xlg:w-[200px] max-xlg:top-[70px]  max-slg:w-[150px] max-slg:top-[170px] max-md:right-[9%]  max-md:top-[140px] max-xmd:hidden
   }
+
+  .nav-links{
+    @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:rounded-[20px] after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[35%]
+  }
+
+  .nav-active{
+    @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:rounded-[20px] after:scale-x-100 after:left-[35%]
+  }
 }
 
 
