@@ -6,8 +6,8 @@ const Navbar = () => {
          <div>
              <img src="footerlogo.svg" alt="" />
          </div>
-         <ul className="nav-bar flex gap-8 text-[#1D1C1C] text-sm">
-            <li><a href="#" className="home nav-links">Home</a></li>
+         <ul className="nav-bar flex gap-8 text-[#1D1C1C] ">
+            <li><a href="#" className="home nav-active">Home</a></li>
             <li><a href="#" className='nav-links'>Features</a></li>
             <li><a href="#" className='nav-links'>About Us</a></li>
             <li><a href="#" className='nav-links'>How it works</a></li>
