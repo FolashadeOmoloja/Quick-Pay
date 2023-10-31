@@ -54,6 +54,28 @@
   height: 450px;
 }
 
+/*offer hover effect*/
+.offer-div{
+  transition: all 400ms ease;
+}
+
+.offer-div:hover .offer-text{
+  color: white ;
+}
+
+.offer-div:hover .offer-button{
+  background: white;
+  color: #0045A5;
+}
+
+.offer-div:hover .offer-img{
+display: none;
+}
+
+.offer-div:hover .offer-img2{
+display: block;
+}
+
 /*CTA ANIMATIONS*/
 @keyframes loadingStroke-1 {
   0%, 100% {
