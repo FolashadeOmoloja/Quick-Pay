@@ -1,3 +1,5 @@
+import Companies from "./Companies"
+
 const offers = [
     {
         image: 'offer1.svg',
@@ -31,7 +33,7 @@ const offers = [
 
 const Offer = () => {
   return (
-    <section  className='pt-[100px] bg-white px-[72px] max-sm:p-[72px] max-xmd:p-[20px] max-xmd:pb-[70px] relative'>
+    <section id="features"  className='pt-[100px] bg-white px-[72px] max-sm:p-[72px] max-xmd:p-[20px] max-xmd:pb-[70px] relative'>
             <section className='text-center mb-[52px] '>
                   <h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold max-sm:text-[40px]">What We Offer</h3>
                   <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 mx-auto"></div>
@@ -56,7 +58,7 @@ const Offer = () => {
                     })
                  }
             </section>
-         
+            <Companies/>
     </section>
   )
 }

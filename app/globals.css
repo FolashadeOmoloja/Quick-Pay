@@ -104,6 +104,50 @@ display: block;
 
 /* CTA ANIMATIONS*/
 
+/*companies animations*/
+@keyframes companyDisplay1 {
+  0%{
+    opacity: 1;
+  }
+  25%,50%,100%{
+    opacity: 0;
+  }
+  
+
+}
+
+@keyframes companyDisplay2 {
+  0%,25%,100%{
+    opacity: 0;
+}
+50%{
+  opacity: 1;
+}
+
+}
+@keyframes companyDisplay3 {
+  0%,25%,50%{
+    opacity: 0;
+}
+
+
+100% {
+  opacity: 1;
+}
+}
+.company1 {
+  animation: companyDisplay1 4s linear infinite;
+}
+
+.company2 {
+  animation: companyDisplay2 4s linear infinite;
+}
+
+.company3 {
+  animation: companyDisplay3 4s linear  infinite;
+}
+
+
 :root {
 /* overflow-x: hidden; */
 }
