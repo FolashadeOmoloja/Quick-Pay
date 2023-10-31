@@ -38,17 +38,16 @@
 }
 
 .nav{
-  background: rgba(255, 255, 255, 0.89);
-  position: fixed;
+  background: rgba(255, 255, 255, 0.97);
   left: 0;
   top: 0;
   right: 0;
   transition: all 400ms ease;
-  height: 450px;
+  height: 144px;
   width: 100%;
 }
 .new_height{
-  height: 350px;
+  height: 450px;
 }
 
 /*CTA ANIMATIONS*/
