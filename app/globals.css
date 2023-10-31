@@ -38,13 +38,14 @@
 }
 
 .nav{
-  background: rgba(0, 0, 0, 0.786);
+  background: rgba(255, 255, 255, 0.89);
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
-  z-index: 4;
   transition: all 400ms ease;
+  height: 450px;
+  width: 100%;
 }
 .new_height{
   height: 350px;
