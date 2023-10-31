@@ -30,6 +30,10 @@
   }
 }
 
+.box-shadow{
+  box-shadow: 0px 4px 200px 0px #00000040;
+}
+
 /*nav bar*/
 .close_menu{
   transform: rotate(135deg);
