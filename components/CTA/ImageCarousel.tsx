@@ -10,12 +10,12 @@ const images = [
   },
 ];
 
-const ImageCarousel = () => {
+const ImageCarousel = ({display = ''}:any) => {
 
 
   return (
     <div className='h-full justify-end items-center flex'>
-      <div className='absolute right-[200px] bottom-[20%]'>
+      <div className={`absolute right-[200px] bottom-[20%] ${display}`}>
         <img src={'cta-stroke1.svg'} alt={`Image1`} height={'10px'} />
       </div>
       <div className='absolute right-[200px] bottom-0 ellipsis'>

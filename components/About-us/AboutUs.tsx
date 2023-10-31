@@ -18,8 +18,13 @@ const content = [
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="py-[154px] bg-white px-[72px] max-sm:p-[72px] max-xmd:p-[20px] max-xmd:pb-[50px]">
-          <section className='flex gap-10 max-lg:flex-col'>
+    <section id="about-us" className="py-[154px] bg-white px-[72px] max-sm:p-[72px] max-xmd:p-[20px] max-xmd:pb-[50px] relative">
+        <section className="flex absolute top-0 left-[22px] gap-4 max-xmd:left-0 max-xsm:top-[-100px]">
+            <img src="cta-stroke1.svg" alt=""  className="max-xmd:hidden"/>
+            <img src="cta-stroke3.svg" alt="" className="max-xsm:hidden"/>
+            <img src="cta-stroke3.svg" alt="" />
+        </section>
+          <section className='flex gap-10 max-lg:flex-col relative z-10'>
                <div className="">
                     <img src="about-us.svg" alt="img" className="h-full w-full"/>
                </div>
@@ -37,7 +42,7 @@ const AboutUs = () => {
                      {
                          content.map((item,index)=>{
                             return(
-                                <div key={index} className="h-[185px] flex col-span-1 box-shadow lg:min-w-full">
+                                <div key={index} className="h-[185px] flex col-span-1 box-shadow lg:min-w-full relative z-10">
                                      <div className="bg-[#0045A5] h-full min-w-[20px]">
 
                                      </div>
