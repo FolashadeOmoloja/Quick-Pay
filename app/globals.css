@@ -22,15 +22,33 @@
   }
 
   .nav-links{
-    @apply relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-[#0045A5] font-semibold
+    @apply relative  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:rounded-[20px] text-lg after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center after:left-[30%] hover:text-[#0045A5] 
   }
 
   .nav-active{
-    @apply relative text-[#0045A5] w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:rounded-[20px] after:scale-x-100 after:left-[30%]
+    @apply relative text-[#0045A5]  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:scale-x-100 after:left-[30%]
   }
 }
 
+/*nav bar*/
+.close_menu{
+  transform: rotate(135deg);
+  display: inline-block;
+  
+}
 
+.nav{
+  background: rgba(0, 0, 0, 0.786);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  transition: all 400ms ease;
+}
+.new_height{
+  height: 350px;
+}
 
 /*CTA ANIMATIONS*/
 @keyframes loadingStroke-1 {
