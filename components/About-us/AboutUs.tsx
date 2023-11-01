@@ -29,7 +29,7 @@ const AboutUs = () => {
                     <img src="about-us.svg" alt="img" className="h-full w-full"/>
                </div>
                <div className="basis-1/2 flex flex-col  max-lg:items-center max-lg:text-center">
-               <  h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold max-sm:text-[40px] max-sm:text-center">About Us</h3>
+               <  h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold  max-sm:text-center">About Us</h3>
                   <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 max-sm:mx-auto"></div>
                    <p className="text-[#565252] text-xl font-semibold mb-[12px] max-sm:text-center">Empowering Your Financial Freedom</p>
                    <p className='text-[#323031] '>At QuickPay, we're driven by a singular mission: to make life easier. We believe in the power of simple, secure, and convenient solutions that empower you to live life to the fullest. With innovation at our core, we're committed to simplifying the everyday and enhancing your experience.</p>

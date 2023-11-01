@@ -1,4 +1,5 @@
 import Companies from "./Companies"
+import Info from "./Info"
 
 const offers = [
     {
@@ -59,6 +60,7 @@ const Offer = () => {
                  }
             </section>
             <Companies/>
+            <Info/>
     </section>
   )
 }
