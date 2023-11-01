@@ -50,6 +50,10 @@
   height: 144px;
   width: 100%;
 }
+
+.transition-div{
+  transition: all 400ms ease;
+}
 .new_height{
   height: 450px;
 }
@@ -75,6 +79,33 @@ display: none;
 .offer-div:hover .offer-img2{
 display: block;
 }
+/*Slide ANIMATIONS*/
+@keyframes slidingScroll {
+  0%, 25% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidingScroll2 {
+  0%,25% {
+    opacity: 0;
+  }
+  50%,100% {
+    opacity: 1;
+  }
+}
+.slide1 {
+  animation: slidingScroll 10s linear infinite;
+}
+
+.slide2 {
+  animation: slidingScroll2 10s linear infinite;
+}
+
+/* CTA ANIMATIONS*/
 
 /*CTA ANIMATIONS*/
 @keyframes loadingStroke-1 {
