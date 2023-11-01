@@ -35,7 +35,7 @@ const Info = () => {
              <p className='text-[#999999] '>QuickPay doesn't just serve businesses – it's equally well-suited for individuals and organizations. If you're looking for a hassle-free way to manage your financial responsibilities, QuickPay has you covered.</p>
              <p className='mt-8 text-[#0083C7] text-xl font-bold'>Recharge and pay bills with QuickPay</p>
              <section className="pt-[32px] px-[25px] bg-[#F0F5F8] mt-6">
-                 <div className="flex gap-5 max-xlg:flex-wrap max-xxsm:justify-center ">
+                 <div className="flex gap-5 max-xlg:flex-wrap max-xxsm:justify-center max-xxsm:flex-col">
                      {
                         images.map((items,index)=>{
                             return(
