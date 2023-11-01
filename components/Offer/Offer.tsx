@@ -1,3 +1,4 @@
+import Business from "./Business"
 import Companies from "./Companies"
 import Info from "./Info"
 
@@ -61,6 +62,7 @@ const Offer = () => {
             </section>
             <Companies/>
             <Info/>
+            <Business/>
     </section>
   )
 }
