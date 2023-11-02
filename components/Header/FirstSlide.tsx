@@ -6,7 +6,7 @@ import TopStrokes from "../CTA/TopStrokes"
 
 const FirstSlide = () => {
   return (
-    <section className='h-[830px]  max-md:h-[900px] max-xxsm:h-[950px] .bg-headergradient  relative w-full'>
+    <section className='h-[830px]  max-md:h-[900px] max-xxsm:h-[950px] bg-headergradient  relative w-full'>
         <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center h-full">
               <section className="flex flex-col text-white max-lg:justify-center max-lg:items-center max-md:text-center">
                 <span className="text-[32px] max-sm:text-[24px] mb-1">Simplifying Your Life</span>
