@@ -28,6 +28,10 @@
   .nav-active{
     @apply relative text-[#0045A5]  w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#0045A5] after:w-[24px] after:scale-x-100 after:left-[30%]
   }
+
+  .bg-headergradient{
+    @apply bg-gradient-to-b from-[#0045A5] to-[#40ADE5] 
+  }
 }
 
 .box-shadow{
