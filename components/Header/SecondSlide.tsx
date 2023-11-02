@@ -8,9 +8,15 @@ const SecondSlide = () => {
         <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center h-full">
               <section className="flex flex-col text-white max-lg:justify-center max-lg:items-center max-md:text-center">
                 <span className="text-[32px] max-sm:text-[24px] mb-1">Simplifying Your Life</span>
+              <div>
               <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px] ">Instant Recharge</h3>
-              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px] hidden">Subscribe Easily</h3>
               <p className="lg:mb-[60px] mb-8">Top up your mobile airtime instantly, anytime, anywhere. Stay connected effortlessly</p>
+              </div>
+              <div className='hidden'>
+              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px]">Subscribe Easily</h3>
+              <p className="lg:mb-[60px] mb-8">Top up your mobile airtime instantly, anytime, anywhere. Stay connected effortlessly</p>
+              </div>
+
                <CTAButton button={[
                       {
                         img: '',
