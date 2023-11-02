@@ -34,7 +34,7 @@ const SecondSlide = () => {
               <Arrrows/>
               </div>
               <section className="absolute right-0 max-xl:static max-lg:w-[400px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
-                <img src="header-first.svg" alt="" className="w-full" />
+                <img src="handphone.svg" alt="" className="w-full" />
               </section>
         </section>
          <div className=" absolute left-[50%] max-slg:left-[45%] bottom-[42px] flex gap-4">
