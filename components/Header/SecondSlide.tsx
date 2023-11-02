@@ -1,6 +1,7 @@
 import React from 'react'
 import Arrrows from '../CTA/Arrrows'
 import CTAButton from '../CTA/CTAButton'
+import HeaderTitle from './HeaderTitle'
 
 const SecondSlide = () => {
   return (
@@ -8,14 +9,7 @@ const SecondSlide = () => {
         <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center h-full">
               <section className="flex flex-col text-white max-lg:justify-center max-lg:items-center max-md:text-center">
                 <span className="text-[32px] max-sm:text-[24px] mb-1">Simplifying Your Life</span>
-              <div>
-              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px] ">Instant Recharge</h3>
-              <p className="lg:mb-[60px] mb-8">Top up your mobile airtime instantly, anytime, anywhere. Stay connected effortlessly</p>
-              </div>
-              <div className='hidden'>
-              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px]">Subscribe Easily</h3>
-              <p className="lg:mb-[60px] mb-8">Top up your mobile airtime instantly, anytime, anywhere. Stay connected effortlessly</p>
-              </div>
+                 <HeaderTitle/>
 
                <CTAButton button={[
                       {
@@ -34,8 +28,14 @@ const SecondSlide = () => {
               <Arrrows/>
               </div>
               <section className="absolute right-0 max-xl:static max-lg:w-[400px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
-                <img src="handphone.svg" alt="" className="w-full" />
+                  <div className='relative w-[600px] h-[600px] max-lg:w-[400px] max-sm:w-[300px]'>
+                  <img src="shadow.svg" alt=""  className='w-full absolute top-0 handShadow'/>
+                  <img src="handphone.svg" alt="" className="w-[95%] absolute left-[35px] top-[34px]" />
+                  </div>
               </section>
+
+
+
         </section>
          <div className=" absolute left-[50%] max-slg:left-[45%] bottom-[42px] flex gap-4">
                <div className="w-[25px] h-[25px] rounded-full bg-[#073270]"></div>

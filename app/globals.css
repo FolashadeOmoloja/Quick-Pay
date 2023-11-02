@@ -109,7 +109,50 @@ display: block;
   animation: slidingScroll2 10s linear infinite;
 }
 
-/* CTA ANIMATIONS*/
+/* hand header keyframes - its a lot!!!*/
+@keyframes title {
+  0%, 25% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes title2 {
+  0%, 25% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+.headerTitle1 {
+  animation: title 5s linear infinite;
+}
+
+.headerTitle2 {
+  animation: title2 5s linear infinite;
+}
+
+
+@keyframes shadow {
+  0%, 25% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+.handShadow {
+  animation: shadow 2s linear infinite;
+}
+
+
+
 
 /*CTA ANIMATIONS*/
 @keyframes loadingStroke-1 {
