@@ -32,9 +32,16 @@ const FirstSlide = () => {
                 <img src="header-first.svg" alt="" className="w-full" />
               </section>
         </section>
+         <div className=" absolute left-[50%] bottom-[42px] flex gap-4">
+               <div className="w-[25px] h-[25px] rounded-full bg-white"></div>
+               <div  className="w-[25px] h-[25px] rounded-full bg-[#073270]"></div>
+            </div>
+         <div className=" absolute top-[192px] left-[40%]">
+             <img src="stroke-4.svg" alt="" />
+         </div> 
          <div className="w-full h-full absolute top-0 ">
          <ImageCarousel/>
-         </div>
+         </div> 
 
     </section>
   )

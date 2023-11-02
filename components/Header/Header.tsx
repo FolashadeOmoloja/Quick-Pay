@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <div  className='relative h-[830px]'>
-    <div className={`transition-div  absolute top-0 w-full`}><FirstSlide/></div>
+    <div className={`transition-div  absolute top-0 w-full `}><FirstSlide/></div>
     <div className={`transition-div  absolute top-0 w-full hidden`}><SecondSlide/></div>
     </div>
   );
