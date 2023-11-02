@@ -6,12 +6,12 @@ import TopStrokes from "../CTA/TopStrokes"
 
 const FirstSlide = () => {
   return (
-    <section className='h-[830px]  bg-[#0083C7]  relative w-full'>
-        <section className="z-[100] relative flex  p-[72px]  pr-0 max-xmd:p-[20px] items-center max-xsm:justify-center h-full">
-              <section className="flex flex-col text-white max-xmd:justify-center max-xmd:items-center">
-                <span className="text-[32px] mb-1">Simplifying Your Life</span>
-              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-sm:text-[40px] max-xmd:text-center">Pay Bills with Ease!</h3>
-              <p className="mb-[60px]">Say goodbye to the hassle of paying bills. Our platform makes it quick and painless</p>
+    <section className='h-[830px]  max-md:h-[900px] max-xxsm:h-[950px] bg-[#0083C7]  relative w-full'>
+        <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center h-full">
+              <section className="flex flex-col text-white max-lg:justify-center max-lg:items-center max-md:text-center">
+                <span className="text-[32px] max-sm:text-[24px] mb-1">Simplifying Your Life</span>
+              <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px] ">Pay Bills with Ease!</h3>
+              <p className="lg:mb-[60px] mb-8">Say goodbye to the hassle of paying bills. Our platform makes it quick and painless</p>
                <CTAButton button={[
                       {
                         img: '',
@@ -25,10 +25,10 @@ const FirstSlide = () => {
                       },
               ]} />
               </section>
-              <div className="absolute top-[55%] left-[33%] max-slg:top-[55%]  max-md:hidden ">
+              <div className="absolute top-[55%] left-[33%] max-xl:top-[70%]  max-lg:hidden ">
               <Arrrows/>
               </div>
-              <section className="absolute right-0">
+              <section className="absolute right-0 max-xl:static max-lg:w-[400px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
                 <img src="header-first.svg" alt="" className="w-full" />
               </section>
         </section>
@@ -36,7 +36,7 @@ const FirstSlide = () => {
                <div className="w-[25px] h-[25px] rounded-full bg-white"></div>
                <div  className="w-[25px] h-[25px] rounded-full bg-[#073270]"></div>
             </div>
-         <div className=" absolute top-[192px] left-[40%]">
+         <div className=" absolute top-[192px] left-[40%] max-md:hidden">
              <img src="stroke-4.svg" alt="" />
          </div> 
          <div className="w-full h-full absolute top-0 ">
