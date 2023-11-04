@@ -2,6 +2,7 @@ import React from 'react'
 import Arrrows from '../CTA/Arrrows'
 import CTAButton from '../CTA/CTAButton'
 import HeaderTitle from './HeaderTitle'
+import Floater from './Floater'
 
 const SecondSlide = () => {
   return (
@@ -31,6 +32,14 @@ const SecondSlide = () => {
                   <div className='relative w-[600px] h-[600px] max-lg:w-[400px] max-sm:w-[300px]'>
                   <img src="shadow.svg" alt=""  className='w-full absolute top-0 handShadow'/>
                   <img src="handphone.svg" alt="" className="w-[95%] absolute left-[35px] top-[34px]" />
+                   <Floater/>
+                  <div className='relative'>
+                    <button className='w-[150px] h-[54px] bg-[#0045A5] relative rounded-[40px] top-[470px] left-[255px] '>
+                          <img src="recharge.svg" alt=""  className=' rechargebtn absolute left-[20px] bottom-[10px]' />
+                          <img src="subscribe.svg" alt=""  className=' subscribebtn absolute left-[20px] bottom-[10px]' />
+                          
+                    </button>
+                  </div>
                   </div>
               </section>
 

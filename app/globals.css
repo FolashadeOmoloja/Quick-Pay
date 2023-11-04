@@ -122,11 +122,100 @@ display: block;
   }
 }
 
+@keyframes shadow {
+  0%, 25% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
 .handShadow {
   animation: shadow 2s linear infinite;
 }
 
+@keyframes recharge {
+  0%, 25% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
 
+@keyframes subscribe {
+  0%, 25% {
+    opacity: 0;
+  }
+  50%, 100% {
+    opacity: 1;
+  }
+}
+
+
+.rechargebtn {
+  animation: recharge 5s linear infinite;
+}
+
+.subscribebtn {
+  animation: subscribe 5s linear infinite;
+}
+
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes moveUp1 {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+
+.box-1{
+  animation: moveUp 2s ease-in-out forwards
+}
+
+.box-2{
+  animation: moveUp1 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.box-3{
+  animation: moveUp1 2s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+.box-4{
+  animation: moveUp1 2s ease-in-out forwards;
+  animation-delay: 6s;
+}
+
+.box-5{
+  animation: moveUp1 2s ease-in-out forwards;
+  animation-delay: 8s;
+}
 
 
 /*CTA ANIMATIONS*/
