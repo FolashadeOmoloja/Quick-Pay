@@ -36,7 +36,7 @@ const SecondSlide = () => {
                   <img src="handphone.svg" alt="" className="w-[95%] absolute left-[35px] top-[34px]" />
                    <Floaters/>
                   <div className='relative'>
-                    <button className='w-[150px] h-[54px] bg-[#0045A5] relative rounded-[40px] top-[470px] left-[255px] '>
+                    <button className='w-[150px] h-[54px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] '>
                           <img src="recharge.svg" alt=""  className=' rechargebtn absolute left-[20px] bottom-[10px]' />
                           <img src="subscribe.svg" alt=""  className=' subscribebtn absolute left-[20px] bottom-[10px]' />
                           
