@@ -78,27 +78,27 @@ const Floater2 = () => {
     <div className="relative h-[250px]">
       <div>
         <img
-          src="icon5.svg"
+          src="icon10.svg"
           alt=""
           className={`w-[70px] xlg:w-[100px] absolute right-0 bottom-0 ${showBox5 ? 'box-5' : 'opacity-0'}`}
         />
         <img
-          src="icon4.svg"
+          src="icon9.svg"
           alt=""
           className={`w-[70px] xlg:w-[100px] absolute right-[100px] top-[50px] ${showBox4 ? 'box-4' : 'opacity-0'}`}
         />
         <img
-          src="icon3.svg"
+          src="icon8.svg"
           alt=""
           className={`w-[70px] xlg:w-[100px] absolute right-[250px] top-[0px] ${showBox3 ? 'box-3' : 'opacity-0'}`}
         />
         <img
-          src="icon2.svg"
+          src="icon7.svg"
           alt=""
           className={`w-[70px] xlg:w-[100px] absolute left-[120px] top-[50px] ${showBox2 ? 'box-2' : 'opacity-0'}`}
         />
         <img
-          src="icon1.svg"
+          src="icon6.svg"
           alt=""
           className={`w-[70px] xlg:w-[100px] absolute left-[20px] bottom-[-10px] ${showBox1 ? 'box-1' : 'opacity-0'}`}
         />
