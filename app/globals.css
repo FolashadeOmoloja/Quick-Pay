@@ -161,6 +161,34 @@ display: block;
 .subscribebtn {
   animation: subscribe 5s linear infinite;
 }
+/*Floater div  ANIMATIONS*/
+@keyframes floater {
+  0%, 25% {
+   display: block;
+  }
+  50%, 100% {
+  display: none;
+  }
+}
+
+@keyframes floater2 {
+  0%,25% {
+  display: none;
+  }
+  50%,100% {
+   display: block;
+  }
+}
+.floaterDiv {
+  animation: floater 12.5s linear infinite;
+}
+
+.floaterDiv2 {
+  animation: floater2 14s linear infinite;
+  animation-delay: 30s;
+}
+
+/* icon animations */
 
 
 @keyframes moveUp {
@@ -208,6 +236,7 @@ display: block;
 }
 
 .box-4{
+
   animation: moveUp1 1s ease-in-out forwards;
 
 }

@@ -22,28 +22,28 @@ const Floater2 = () => {
 
        setTimeout(() => {
     setShowBox1(true);
-  }, 500);
+  }, 1000);
   
         const timeout1 = setTimeout(() => {
           setShowBox2(true);
        
-        }, 1000);
+        }, 2000);
   
         const timeout2 = setTimeout(() => {
           setShowBox3(true);
-        }, 1500);
+        }, 3000);
   
         const timeout3 = setTimeout(() => {
           setShowBox4(true);
-        }, 2000);
+        }, 4000);
   
         const timeout4 = setTimeout(() => {
           setShowBox5(true);
-        }, 2500);
+        }, 5000);
   
         const refresh = setTimeout(() => {
           setRefresh(!refresh);
-        }, 3000);
+        }, 6000);
   
         return () => {
           // Clean up the timeouts when the component unmounts
