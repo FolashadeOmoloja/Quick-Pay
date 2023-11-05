@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 
-const Floater = () => {
+const Floater2 = () => {
   const [showBox1, setShowBox1] = useState(false);
   const [showBox2, setShowBox2] = useState(false);
   const [showBox3, setShowBox3] = useState(false);
@@ -107,4 +107,4 @@ const Floater = () => {
   );
 };
 
-export default Floater;
+export default Floater2;
