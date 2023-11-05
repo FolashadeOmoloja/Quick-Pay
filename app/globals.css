@@ -165,7 +165,7 @@ display: block;
 
 @keyframes moveUp {
   0% {
-    opacity: 0;
+
     transform: translateY(0);
   }
 
@@ -199,22 +199,22 @@ display: block;
 
 .box-2{
   animation: moveUp1 2s ease-in-out forwards;
-  animation-delay: 2s;
+
 }
 
 .box-3{
   animation: moveUp1 2s ease-in-out forwards;
-  animation-delay: 4s;
+
 }
 
 .box-4{
   animation: moveUp1 2s ease-in-out forwards;
-  animation-delay: 6s;
+
 }
 
 .box-5{
   animation: moveUp1 2s ease-in-out forwards;
-  animation-delay: 8s;
+
 }
 
 

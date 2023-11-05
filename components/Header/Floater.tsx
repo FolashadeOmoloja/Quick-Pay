@@ -7,45 +7,74 @@ const Floater = () => {
   const [showBox3, setShowBox3] = useState(false);
   const [showBox4, setShowBox4] = useState(false);
   const [showBox5, setShowBox5] = useState(false);
+  const [refresh, setRefresh] = useState(false)
 
-  useEffect(() => {
+
+   const showBoxes: any = () => {
     // Function to show the boxes sequentially
     const showSequentially = () => {
-      setShowBox1(true);
+          // Initially hide all boxes
+  setShowBox1(false);
+  setShowBox2(false);
+  setShowBox3(false);
+  setShowBox4(false);
+  setShowBox5(false);
 
-      const timeout1 = setTimeout(() => {
-        setShowBox2(true);
-      }, 2000);
-
-      const timeout2 = setTimeout(() => {
-        setShowBox3(true);
-      }, 4000);
-
-      const timeout3 = setTimeout(() => {
-        setShowBox4(true);
-      }, 6000);
-
-      const timeout4 = setTimeout(() => {
-        setShowBox5(true);
-      }, 8000);
-
-      return () => {
-        // Clean up the timeouts when the component unmounts
-        clearTimeout(timeout1);
-        clearTimeout(timeout2);
-        clearTimeout(timeout3);
-        clearTimeout(timeout4);
+       setTimeout(() => {
+    setShowBox1(true);
+  }, 1000);
+  
+        const timeout1 = setTimeout(() => {
+          setShowBox2(true);
+       
+        }, 2000);
+  
+        const timeout2 = setTimeout(() => {
+          setShowBox3(true);
+        }, 3000);
+  
+        const timeout3 = setTimeout(() => {
+          setShowBox4(true);
+        }, 4000);
+  
+        const timeout4 = setTimeout(() => {
+          setShowBox5(true);
+        }, 5000);
+  
+        const refresh = setTimeout(() => {
+          setRefresh(!refresh);
+        }, 6000);
+  
+        return () => {
+          // Clean up the timeouts when the component unmounts
+          clearTimeout(timeout1);
+          clearTimeout(timeout2);
+          clearTimeout(timeout3);
+          clearTimeout(timeout4);
+        };
       };
-    };
+  
+      const clearAllTimeouts = showSequentially();
+  
+      return () => {
+        // Clean up any remaining timeout when the component unmounts
+        clearAllTimeouts();
+      };
 
-    const clearAllTimeouts = showSequentially();
+   }
+
+
+  useEffect(() => {
+    const interval = setInterval(showBoxes, 6000); 
+  
 
     return () => {
-      // Clean up any remaining timeout when the component unmounts
-      clearAllTimeouts();
-    };
-  }, []);
+      clearInterval(interval);
 
+    };
+  }, [refresh]);
+
+  console.log('box 1', showBox2)
   return (
     <div className="relative h-[250px]">
       <div>
