@@ -194,26 +194,26 @@ display: block;
 
 
 .box-1{
-  animation: moveUp 2s ease-in-out forwards
+  animation: moveUp 1s ease-in-out forwards
 }
 
 .box-2{
-  animation: moveUp1 2s ease-in-out forwards;
+  animation: moveUp1 1s ease-in-out forwards;
 
 }
 
 .box-3{
-  animation: moveUp1 2s ease-in-out forwards;
+  animation: moveUp1 1s ease-in-out forwards;
 
 }
 
 .box-4{
-  animation: moveUp1 2s ease-in-out forwards;
+  animation: moveUp1 1s ease-in-out forwards;
 
 }
 
 .box-5{
-  animation: moveUp1 2s ease-in-out forwards;
+  animation: moveUp1 1s ease-in-out forwards;
 
 }
 
