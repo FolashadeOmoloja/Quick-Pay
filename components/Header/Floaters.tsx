@@ -24,7 +24,7 @@ const Floaters = () => {
         // Refresh after 10 seconds (twice the keyframe interval)
         const refreshTimeout = setTimeout(() => {
           setRefresh(!refresh);
-        }, 15000);
+        }, 6000);
     
         return () => {
           clearTimeout(refreshTimeout);
@@ -32,7 +32,7 @@ const Floaters = () => {
       };
     
       useEffect(() => {
-        const interval = setInterval(showBoxes, 15000); // Adjust for the keyframe interval
+        const interval = setInterval(showBoxes, 12000); // Adjust for the keyframe interval
     
         return () => {
           clearInterval(interval);

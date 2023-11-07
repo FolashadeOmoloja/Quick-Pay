@@ -10,7 +10,7 @@ const Floater2 = () => {
   const [refresh, setRefresh] = useState(false)
 
 
-  const showBoxes: any = () => {
+   const showBoxes: any = () => {
     // Function to show the boxes sequentially
     const showSequentially = () => {
           // Initially hide all boxes
@@ -65,7 +65,7 @@ const Floater2 = () => {
 
 
   useEffect(() => {
-    const interval = setInterval(showBoxes, 10000); 
+    const interval = setInterval(showBoxes, 6000); 
   
 
     return () => {
