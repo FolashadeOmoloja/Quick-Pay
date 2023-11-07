@@ -32,6 +32,10 @@
   .bg-headergradient{
     @apply bg-gradient-to-b from-[#0045A5] to-[#40ADE5] 
   }
+
+  .headerBtnImg{
+    @apply max-xslg:w-[80%] absolute left-[20px] bottom-[10px] max-xslg:left-[10px] max-xslg:bottom-[7px]
+  }
 }
 
 .box-shadow{

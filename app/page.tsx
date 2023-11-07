@@ -17,14 +17,14 @@ const page = () => {
     <Navbar/> 
     <MobileNav/>
     <Header/>
-    <Offer/>
+    {/* <Offer/>
     <BusinessGrid/>
     <AboutUs/>
     <Process/>
     <Testimonials/>
     <CTA/>
      <Contact/>
-     <Footer/>
+     <Footer/> */}
     </>
   )
 }
