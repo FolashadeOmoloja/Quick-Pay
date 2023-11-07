@@ -40,6 +40,13 @@ const Floater = ({refresh}:any) => {
       setTimeout(() => {
         setShowBox5(true);
       }, 5000);
+      setTimeout(() => {
+        setShowBox1(false);
+        setShowBox2(false);
+        setShowBox3(false);
+        setShowBox4(false);
+        setShowBox5(false);
+      }, 6000);
     }
   }, [refresh]);
 

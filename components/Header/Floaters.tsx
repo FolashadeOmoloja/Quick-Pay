@@ -4,26 +4,28 @@ import Floater from './Floater'
 import Floater2 from './Floater2'
 
 const Floaters = () => {
-    const [showBox1, setShowBox1] = useState(true);
+    const [showBox1, setShowBox1] = useState(false);
     const [showBox2, setShowBox2] = useState(false);
-    const [refresh, setRefresh] = useState(false)
+    const [refresh, setRefresh] = useState(true)
+    const [refresh2, setRefresh2] = useState(false)
   
   
-    const showBoxes = () => {
-        // Initially hide both boxes
-        setShowBox1(false);
-        setShowBox2(false);
-    
-        // Show the first box for 5 seconds
-        setShowBox1(true);
-        setTimeout(() => {
-          setShowBox1(false);
-          setShowBox2(true);
-        }, 5000);
-    
-        // Refresh after 10 seconds (twice the keyframe interval)
+    const showFloater = () => {
+
+        if(refresh == true){
+            setShowBox1(true);
+        } else if (refresh == false){
+            setShowBox1(false); 
+        } else if (refresh2 == true){
+            setShowBox2(true)
+        } else if (refresh2 == false){
+            setShowBox2(false)
+        }
+        
+
         const refreshTimeout = setTimeout(() => {
           setRefresh(!refresh);
+          setRefresh2(!refresh2)
         }, 6000);
     
         return () => {
@@ -32,7 +34,9 @@ const Floaters = () => {
       };
     
       useEffect(() => {
-        const interval = setInterval(showBoxes, 12000); // Adjust for the keyframe interval
+        console.log(refresh, 'refresh')
+        console.log(refresh, 'refresh2')
+        const interval = setInterval(showFloater, 6000); // Adjust for the keyframe interval
     
         return () => {
           clearInterval(interval);
@@ -42,10 +46,10 @@ const Floaters = () => {
   return (
     <div className='relative h-[500px] w-full'>
         <div className={`absolute w-full top-0 ${showBox1?'block':'hidden'}`}>
-        <Floater/>
+        <Floater refresh={refresh}/>
         </div>
         <div className={`relative top-0 ${showBox2?'block':'hidden'}`}>
-        <Floater2/>
+        <Floater2 refresh2={refresh2}/>
         </div>
 
 

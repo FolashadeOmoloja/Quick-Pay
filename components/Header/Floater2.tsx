@@ -1,78 +1,56 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 
-const Floater2 = () => {
+const Floater2 = ({refresh2}:any) => {
   const [showBox1, setShowBox1] = useState(false);
   const [showBox2, setShowBox2] = useState(false);
   const [showBox3, setShowBox3] = useState(false);
   const [showBox4, setShowBox4] = useState(false);
   const [showBox5, setShowBox5] = useState(false);
-  const [refresh, setRefresh] = useState(false)
-
-
-   const showBoxes: any = () => {
-    // Function to show the boxes sequentially
-    const showSequentially = () => {
-          // Initially hide all boxes
-  setShowBox1(false);
-  setShowBox2(false);
-  setShowBox3(false);
-  setShowBox4(false);
-  setShowBox5(false);
-
-       setTimeout(() => {
-    setShowBox1(true);
-  }, 1000);
-  
-        const timeout1 = setTimeout(() => {
-          setShowBox2(true);
-       
-        }, 2000);
-  
-        const timeout2 = setTimeout(() => {
-          setShowBox3(true);
-        }, 3000);
-  
-        const timeout3 = setTimeout(() => {
-          setShowBox4(true);
-        }, 4000);
-  
-        const timeout4 = setTimeout(() => {
-          setShowBox5(true);
-        }, 5000);
-  
-        const refresh = setTimeout(() => {
-          setRefresh(!refresh);
-        }, 6000);
-  
-        return () => {
-          // Clean up the timeouts when the component unmounts
-          clearTimeout(timeout1);
-          clearTimeout(timeout2);
-          clearTimeout(timeout3);
-          clearTimeout(timeout4);
-        };
-      };
-  
-      const clearAllTimeouts = showSequentially();
-  
-      return () => {
-        // Clean up any remaining timeout when the component unmounts
-        clearAllTimeouts();
-      };
-
-   }
-
 
   useEffect(() => {
-    const interval = setInterval(showBoxes, 6000); 
-  
+    if (refresh2) {
+      // Initially hide all boxes when refresh is triggered
+      setShowBox1(false);
+      setShowBox2(false);
+      setShowBox3(false);
+      setShowBox4(false);
+      setShowBox5(false);
 
-    return () => {
-      clearInterval(interval);
+      // Show the first box for 1 second
+      setTimeout(() => {
+        setShowBox1(true);
+      }, 1000);
 
-    };
-  }, [refresh]);
+      // Show the second box for 1 second
+      setTimeout(() => {
+        setShowBox2(true);
+      }, 2000);
+
+      // Show the third box for 1 second
+      setTimeout(() => {
+        setShowBox3(true);
+      }, 3000);
+
+      // Show the fourth box for 1 second
+      setTimeout(() => {
+        setShowBox4(true);
+      }, 4000);
+
+      // Show the fifth box for 1 second
+      setTimeout(() => {
+        setShowBox5(true);
+      }, 5000);
+      setTimeout(() => {
+        setShowBox1(false);
+        setShowBox2(false);
+        setShowBox3(false);
+        setShowBox4(false);
+        setShowBox5(false);
+      }, 6000);
+    }
+  }, [refresh2]);
+
 
   return (
     <div className="relative h-[250px]">
