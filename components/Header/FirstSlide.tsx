@@ -1,7 +1,7 @@
 import Arrrows from "../CTA/Arrrows"
 import CTAButton from "../CTA/CTAButton"
 import ImageCarousel from "../CTA/ImageCarousel"
-import TopStrokes from "../CTA/TopStrokes"
+
 
 
 const FirstSlide = () => {

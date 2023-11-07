@@ -2,8 +2,6 @@ import React from 'react'
 import Arrrows from '../CTA/Arrrows'
 import CTAButton from '../CTA/CTAButton'
 import HeaderTitle from './HeaderTitle'
-import Floater from './Floater'
-import Floater2 from './Floater2'
 import Floaters from './Floaters'
 
 const SecondSlide = () => {

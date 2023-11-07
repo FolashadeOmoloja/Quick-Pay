@@ -23,7 +23,7 @@ const Floaters = () => {
       clearInterval(interval);
     };
   }, [refresh, refresh2]);
-  console.log(refresh2)
+  
 
   return (
     <div className="relative h-[500px] w-full">

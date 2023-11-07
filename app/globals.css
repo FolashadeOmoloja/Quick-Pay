@@ -102,11 +102,11 @@ display: block;
   }
 }
 .slide1 {
-  animation: slidingScroll 20s linear infinite;
+  animation: slidingScroll 26s linear infinite;
 }
 
 .slide2 {
-  animation: slidingScroll2 20s linear infinite;
+  animation: slidingScroll2 26s linear infinite;
 }
 
 /* hand header keyframes - its a lot!!!*/
