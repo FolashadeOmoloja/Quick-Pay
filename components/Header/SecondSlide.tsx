@@ -29,9 +29,9 @@ const SecondSlide = () => {
               <Arrrows/>
               </div>
               <section className="absolute right-0 max-xl:static max-lg:w-[400px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
-                  <div className='relative w-[600px] h-[600px] max-lg:w-[400px] max-sm:w-[300px]'>
+                  <div className='relative w-[600px] h-[600px] max-lg:w-[400px] max-sm:w-[300px]'> 
                   <img src="shadow.svg" alt=""  className='w-full absolute top-0 handShadow'/>
-                  <img src="handphone.svg" alt="" className="w-[95%] absolute left-[35px] top-[34px]" />
+                  <img src="handphone.svg" alt="" className="w-[94%] absolute left-[35px] top-[34px]" />
                    <Floaters/>
                   <div className='relative'>
                     <button className='w-[150px] h-[54px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] '>
