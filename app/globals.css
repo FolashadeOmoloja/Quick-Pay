@@ -49,16 +49,16 @@
     @apply floater-icons left-[20px] bottom-[-10px] max-xsm:bottom-[10px]
   }
   .box2{
-    @apply floater-icons left-[120px] top-[50px]  max-sm:left-[70px] max-sm:top-[80px]
+    @apply floater-icons left-[120px] top-[50px]  max-sm:left-[70px] max-sm:top-[80px] max-xsm:left-[30px] max-xsm:top-[100px]
   }
   .box3{
-    @apply floater-icons right-[250px] max-xslg:right-[200px] max-lg:right-[250px] top-[0px] max-sm:right-[160px] max-sm:top-[30px]
+    @apply floater-icons right-[250px] max-xslg:right-[200px] max-lg:right-[250px] top-[0px] max-sm:right-[160px] max-sm:top-[30px] max-xsm:right-[80px] max-xsm:top-[40px]
   }
   .box4{
-    @apply floater-icons right-[100px] top-[50px]  max-sm:right-[70px] max-sm:top-[80px]
+    @apply floater-icons right-[100px] top-[50px]  max-sm:right-[70px] max-sm:top-[80px] max-xsm:right-[-10px] max-xsm:top-[100px]
   }
   .box5{
-    @apply floater-icons right-0 bottom-0
+    @apply floater-icons right-0 bottom-0 
   }
 }
 
