@@ -62,17 +62,17 @@ const Floater = ({refresh}:any) => {
         <img
           src="icon4.svg"
           alt=""
-          className={`floater-icons right-[100px] top-[50px] ${showBox4 ? 'box-4' : 'opacity-0'}`}
+          className={`floater-icons right-[100px] top-[50px] max-sm:right-[70px] max-sm:top-[80px] ${showBox4 ? 'box-4' : 'opacity-0'}`}
         />
         <img
           src="icon3.svg"
           alt=""
-          className={`floater-icons right-[250px] max-xslg:right-[200px] top-[0px] ${showBox3 ? 'box-3' : 'opacity-0'}`}
+          className={`floater-icons right-[250px] max-xslg:right-[200px] max-lg:right-[250px] top-[0px] ${showBox3 ? 'box-3' : 'opacity-0'}`}
         />
         <img
           src="icon2.svg"
           alt=""
-          className={`floater-icons left-[120px] top-[50px] ${showBox2 ? 'box-2' : 'opacity-0'}`}
+          className={`floater-icons left-[120px] top-[50px] max-sm:left-[70px] max-sm:top-[80px] ${showBox2 ? 'box-2' : 'opacity-0'}`}
         />
         <img
           src="icon1.svg"
