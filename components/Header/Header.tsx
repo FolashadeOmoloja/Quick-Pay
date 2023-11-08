@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from 'react';
 import FirstSlide from './FirstSlide';
 import SecondSlide from './SecondSlide';
@@ -26,8 +27,8 @@ const Header = () => {
 
   return (
     <div  className='relative h-[830px] max-lg:h-[1300px]   max-xsm:h-[920px]'>
-    <div className={`transition-div  absolute top-0 w-full ${showSlide1?'block':'hidden'}`}><FirstSlide/></div>
-    <div className={`transition-div  absolute top-0 w-full ${showSlide2?'block':'hidden'} `}><SecondSlide/></div>
+    <div className={`transition-div  absolute top-0 w-full ${showSlide1?'opacity-1':'opacity-0'}`}><FirstSlide/></div>
+    <div className={`transition-div  absolute top-0 w-full ${showSlide2?'opacity-1':'opacity-0'} `}><SecondSlide/></div>
     </div>
   );
 };
