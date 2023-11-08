@@ -19,14 +19,14 @@ const offers = [
     },
     {
         image: 'offer3.svg',
-        image2:'offer7.svg',
+        image2:'offer8.svg',
         title:'Subscription Service',
         text:'Effortlessly subscribe to your favorite services',
         button:'Access Now'
     },
     {
         image: 'offer4.svg',
-        image2:'offer8.svg',
+        image2:'offer7.svg',
         title:'Secure & Convenient',
         text:'Trustworthy transactions at your fingertips',
         button:'Get Started'
