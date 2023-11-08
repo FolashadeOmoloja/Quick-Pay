@@ -1,4 +1,3 @@
-"use client"
 import { useEffect, useState } from 'react';
 import FirstSlide from './FirstSlide';
 import SecondSlide from './SecondSlide';

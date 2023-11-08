@@ -1,5 +1,4 @@
-"use client"
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Floater from './Floater';
 import Floater2 from './Floater2';
 

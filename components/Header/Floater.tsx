@@ -1,5 +1,4 @@
-"use client"
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Floater = ({refresh}:any) => {
   const [showBox1, setShowBox1] = useState(false);

@@ -1,4 +1,3 @@
-import React from 'react'
 import Arrrows from '../CTA/Arrrows'
 import CTAButton from '../CTA/CTAButton'
 import HeaderTitle from './HeaderTitle'
@@ -28,7 +27,7 @@ const SecondSlide = () => {
               <div className="absolute top-[55%] left-[33%] max-xl:top-[70%]  max-lg:hidden ">
               <Arrrows/>
               </div>
-              <section className="absolute right-0 max-xl:static max-lg:w-[600px] max-sm:w-[400px] max-lg:mt-[100px] max-xsm:mt-[50px] max-xsm:w-[270px] max-lg:mb-6">
+              <section className="absolute right-0 max-xl:static max-lg:w-[600px] max-sm:w-[400px] max-lg:mt-[100px] max-xsm:mt-7 max-xsm:w-[270px] max-lg:mb-6">
                   <div className='relative w-[600px] h-[600px] max-xslg:w-[500px] max-lg:w-[600px] max-sm:w-[400px] max-xsm:w-[250px]'> 
                   <img src="shadow.svg" alt=""  className='w-full absolute top-0 handShadow max-lg:hidden'/>
                   <img src="handphone.svg" alt="" className="w-[94%] max-xslg:left-[30px]  absolute left-[35px] top-[34px]" />

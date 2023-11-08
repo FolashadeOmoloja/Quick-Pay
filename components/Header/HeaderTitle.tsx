@@ -1,5 +1,4 @@
-'use client'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const HeaderTitle = () => {
     const [firstTitle, setFirstTitle] = useState(true);
