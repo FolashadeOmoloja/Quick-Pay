@@ -34,11 +34,11 @@
   }
 
   .headerBtn{
-    @apply w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px] max-sm:w-[100px] max-sm:h-[40px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[215px]  max-xslg:top-[-70px] max-lg:top-0 max-lg:left-[260px] max-sm:top-[-150px] max-sm:left-[175px]
+    @apply w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px]  max-sm:w-[100px] max-sm:h-[40px] max-xsm:w-[68px] max-xsm:h-[28px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[215px]  max-xslg:top-[-70px] max-lg:top-0 max-lg:left-[260px] max-sm:top-[-150px] max-sm:left-[175px] max-xsm:left-[118px] max-xsm:top-[-270px]
   }
 
   .headerBtnImg{
-    @apply max-xslg:w-[80%] absolute left-[20px] bottom-[10px] max-xslg:left-[10px] max-xslg:bottom-[7px]
+    @apply max-xslg:w-[80%] absolute left-[20px] bottom-[10px] max-xslg:left-[10px] max-xslg:bottom-[7px] max-xsm:left-[7px] max-xsm:bottom-[5px]
   }
 
   .floater-icons{
