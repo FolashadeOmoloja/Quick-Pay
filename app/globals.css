@@ -33,6 +33,10 @@
     @apply bg-gradient-to-b from-[#0045A5] to-[#40ADE5] 
   }
 
+  .headerBtn{
+    @apply w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[215px]  max-xslg:top-[-70px]
+  }
+
   .headerBtnImg{
     @apply max-xslg:w-[80%] absolute left-[20px] bottom-[10px] max-xslg:left-[10px] max-xslg:bottom-[7px]
   }

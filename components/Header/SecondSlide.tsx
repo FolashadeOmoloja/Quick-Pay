@@ -6,8 +6,8 @@ import Floaters from './Floaters'
 
 const SecondSlide = () => {
   return (
-    <section className='h-[830px]  max-md:h-[900px] max-xxsm:h-[950px] bg-headergradient  relative '>
-        <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center h-full">
+    <section className='h-[830px]  max-lg:h-[1200px]  max-xxsm:h-[950px] bg-headergradient  relative '>
+        <section className="z-[100] relative flex max-lg:flex-col  p-[72px]  lg:pr-0 max-xmd:p-[20px] items-center max-lg:justify-center ">
               <section className="flex flex-col text-white max-lg:justify-center max-lg:items-center max-md:text-center">
                 <span className="text-[32px] max-sm:text-[24px] mb-1">Simplifying Your Life</span>
                  <HeaderTitle/>
@@ -34,7 +34,7 @@ const SecondSlide = () => {
                   <img src="handphone.svg" alt="" className="w-[94%] max-xslg:left-[30px]  absolute left-[35px] top-[34px]" />
                    <Floaters/>
                   <div className='relative'>
-                    <button className='w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[215px]  max-xslg:top-[-70px]'>
+                    <button className='headerBtn'>
                           <img src="recharge.svg" alt=""  className=' rechargebtn headerBtnImg' />
                           <img src="subscribe.svg" alt=""  className=' subscribebtn headerBtnImg' />
                           
