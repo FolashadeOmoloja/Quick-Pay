@@ -42,11 +42,11 @@
   }
 
   .floater-icons{
-    @apply w-[70px] max-sm:w-[60px] xlg:w-[100px] absolute 
+    @apply w-[70px] max-sm:w-[60px] max-xsm:w-[50px] xlg:w-[100px] absolute 
   }
 
   .box1{
-    @apply floater-icons left-[20px] bottom-[-10px]
+    @apply floater-icons left-[20px] bottom-[-10px] max-xsm:bottom-[10px]
   }
   .box2{
     @apply floater-icons left-[120px] top-[50px]  max-sm:left-[70px] max-sm:top-[80px]
