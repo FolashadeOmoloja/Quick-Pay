@@ -58,27 +58,27 @@ const Floater2 = ({refresh2}:any) => {
         <img
           src="icon10.svg"
           alt=""
-          className={`floater-icons right-0 bottom-0 ${showBox5 ? 'box-5' : 'opacity-0'}`}
+          className={`box5 ${showBox5 ? 'box-5' : 'opacity-0'}`}
         />
         <img
           src="icon9.svg"
           alt=""
-          className={`floater-icons right-[100px] top-[50px]  max-sm:right-[70px] max-sm:top-[80px] ${showBox4 ? 'box-4' : 'opacity-0'}`}
+          className={`box4 ${showBox4 ? 'box-4' : 'opacity-0'}`}
         />
         <img
           src="icon8.svg"
           alt=""
-          className={`floater-icons right-[250px] max-xslg:right-[200px] max-lg:right-[250px] top-[0px] ${showBox3 ? 'box-3' : 'opacity-0'}`}
+          className={`box3 ${showBox3 ? 'box-3' : 'opacity-0'}`}
         />
         <img
           src="icon7.svg"
           alt=""
-          className={`floater-icons left-[120px] top-[50px]  max-sm:left-[70px] max-sm:top-[80px]  ${showBox2 ? 'box-2' : 'opacity-0'}`}
+          className={`box2  ${showBox2 ? 'box-2' : 'opacity-0'}`}
         />
         <img
           src="icon6.svg"
           alt=""
-          className={`floater-icons left-[20px] bottom-[-10px] ${showBox1 ? 'box-1' : 'opacity-0'}`}
+          className={`box1 ${showBox1 ? 'box-1' : 'opacity-0'}`}
         />
       </div>
     </div>
