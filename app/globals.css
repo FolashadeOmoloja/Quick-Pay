@@ -58,7 +58,7 @@
     @apply floater-icons right-[100px] top-[50px]  max-sm:right-[70px] max-sm:top-[80px] max-xsm:right-[-10px] max-xsm:top-[100px]
   }
   .box5{
-    @apply floater-icons right-0 bottom-0 
+    @apply floater-icons right-0 bottom-0 max-xsm:right-[-20px]
   }
 }
 
@@ -130,11 +130,11 @@ display: block;
   }
 }
 .slide1 {
-  animation: slidingScroll 26s linear infinite;
+  animation: slidingScroll 20s linear infinite;
 }
 
 .slide2 {
-  animation: slidingScroll2 26s linear infinite;
+  animation: slidingScroll2 20s linear infinite;
 }
 
 /* hand header keyframes - its a lot!!!*/
