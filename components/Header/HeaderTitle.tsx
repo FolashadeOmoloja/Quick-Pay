@@ -19,7 +19,7 @@ const HeaderTitle = () => {
       };
     }, [firstTitle, secondTitle]);
   return (
-    <section>
+    <section className='max-lg:text-center'>
            {
             firstTitle &&  <div className=''>
             <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[40px] ">Instant Recharge</h3>

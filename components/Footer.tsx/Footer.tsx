@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-[#F0F5F8] p-[72px] max-xmd:p-[20px]">
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
         {/* Column 1 */}
         <div className="col-span-1">
           <img src="footerlogo.svg" alt="Footer Logo" />

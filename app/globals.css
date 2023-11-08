@@ -36,6 +36,10 @@
   .headerBtnImg{
     @apply max-xslg:w-[80%] absolute left-[20px] bottom-[10px] max-xslg:left-[10px] max-xslg:bottom-[7px]
   }
+
+  .floater-icons{
+    @apply w-[70px] xlg:w-[100px] absolute 
+  }
 }
 
 .box-shadow{

@@ -28,13 +28,13 @@ const SecondSlide = () => {
               <div className="absolute top-[55%] left-[33%] max-xl:top-[70%]  max-lg:hidden ">
               <Arrrows/>
               </div>
-              <section className="absolute right-0 max-xl:static max-lg:w-[400px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
-                  <div className='relative w-[600px] h-[600px] max-xslg:w-[500px] max-lg:w-[400px] max-sm:w-[300px]'> 
+              <section className="absolute right-0 max-xl:static max-lg:w-[500px] max-sm:w-[300px] max-lg:mt-8 max-lg:mb-6">
+                  <div className='relative w-[600px] h-[600px] max-xslg:w-[500px] max-sm:w-[300px]'> 
                   <img src="shadow.svg" alt=""  className='w-full absolute top-0 handShadow'/>
                   <img src="handphone.svg" alt="" className="w-[94%] max-xslg:left-[30px]  absolute left-[35px] top-[34px]" />
                    <Floaters/>
                   <div className='relative'>
-                    <button className='w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[] '>
+                    <button className='w-[150px] h-[54px] max-xslg:w-[120px] max-xslg:h-[44px] bg-[#0045A5] relative rounded-[40px] top-[0px] left-[255px] max-xslg:left-[215px]  max-xslg:top-[-70px]'>
                           <img src="recharge.svg" alt=""  className=' rechargebtn headerBtnImg' />
                           <img src="subscribe.svg" alt=""  className=' subscribebtn headerBtnImg' />
                           
