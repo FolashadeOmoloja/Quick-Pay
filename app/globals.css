@@ -68,7 +68,7 @@
 
 /*nav bar*/
 .close_menu{
-  transform: rotate(135deg);
+  transform: rotate(180deg);
   display: inline-block;
   
 }

@@ -28,6 +28,7 @@ const MobileNav = () => {
               </div>
              <div onClick={toggleMenu} className=" text-[#0045A5] text-[32px] max-xsm:text-[24px] xlg:hidden cursor-pointer ">
                  <HiMiniBars3BottomLeft className={`transition-all duration-400 ease-in ${showMenu}`} />
+                 {/* <HiMiniBars3BottomLeft className={`transition-all duration-400 ease-in ${showMenu}`} /> */}
               </div>
             </section>
             <div className={`${navBarDisplay} flex-col justify-center items-center`}>
