@@ -7,16 +7,21 @@ const MobileNav = () => {
     const [activeNav, setActiveNav] = useState ('#')
     const [navClassName, setNavClassName] = useState("nav");
     const [showMenu, setShowMenu] = useState("");
+    const [showIcon, setShowIcon] = useState("hidden")
+    const [show, setShow] = useState("")
     const [navBarDisplay, setNavBarDisplay] = useState("hidden");
   
     const toggleMenu = () => {
       if (navClassName === "nav") {
         setNavClassName("nav new_height fixed");
-        setShowMenu("close_menu");
+        setShowMenu(" hidden");
+        setShow('hidden')
+        setShowIcon('block')
         setNavBarDisplay('flex');
       } else {
         setNavClassName("nav");
         setShowMenu("");
+        setShowIcon('hidden')
         setNavBarDisplay('hidden');
       }
     };
@@ -28,7 +33,7 @@ const MobileNav = () => {
               </div>
              <div onClick={toggleMenu} className=" text-[#0045A5] text-[32px] max-xsm:text-[24px] xlg:hidden cursor-pointer ">
                  <HiMiniBars3BottomLeft className={`transition-all duration-400 ease-in ${showMenu}`} />
-                 {/* <HiMiniBars3BottomLeft className={`transition-all duration-400 ease-in ${showMenu}`} /> */}
+                 < FaPlus className={`transition-all duration-400 ease-in plus-icon ${showIcon}`} />
               </div>
             </section>
             <div className={`${navBarDisplay} flex-col justify-center items-center`}>
