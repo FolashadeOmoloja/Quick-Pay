@@ -21,13 +21,13 @@ const HeaderTitle = () => {
     <section className='max-lg:text-center'>
            {
             firstTitle &&  <div className=''>
-            <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[32px] ">Instant Recharge</h3>
+            <h1 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[36px] ">Instant Recharge</h1>
             <p className="lg:mb-[60px] mb-8 text-lg">Top up your mobile airtime instantly, anytime, anywhere. Stay connected effortlessly</p>
         </div>
            }
            {
             secondTitle &&   <div className=''>
-            <h3 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[32px]">Subscribe Easily</h3>
+            <h1 className=" text-[72px] font-bold mb-6 underline decoration-1 max-slg:text-[60px] max-sm:text-[36px]">Subscribe Easily</h1>
             <p className="lg:mb-[60px] mb-8 text-lg">Unlock the Benefits of Hassle-free Subscriptions. Join QuickPay Today</p>
          </div>
            }
