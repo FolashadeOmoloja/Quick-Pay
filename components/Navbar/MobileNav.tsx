@@ -8,14 +8,12 @@ const MobileNav = () => {
     const [navClassName, setNavClassName] = useState("nav");
     const [showMenu, setShowMenu] = useState("");
     const [showIcon, setShowIcon] = useState("hidden")
-    const [show, setShow] = useState("")
     const [navBarDisplay, setNavBarDisplay] = useState("hidden");
   
     const toggleMenu = () => {
       if (navClassName === "nav") {
         setNavClassName("nav new_height fixed");
         setShowMenu(" hidden");
-        setShow('hidden')
         setShowIcon('block')
         setNavBarDisplay('flex');
       } else {
