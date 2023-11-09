@@ -37,11 +37,11 @@ const Offer = () => {
   return (
     <section id="features"  className='pt-[100px] bg-white px-[72px] max-sm:p-[72px] max-xmd:p-[20px]  relative'>
             <section className='text-center mb-[52px] '>
-                  <h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold max-sm:text-[40px]">What We Offer</h3>
+                  <h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold max-sm:text-[32px]">What We Offer</h3>
                   <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 mx-auto"></div>
                    <p className="text-[#565252] font-semibold ">Experience the QuickPay Advantage</p>
             </section>
-            <section className="flex gap-5 max-xlg:flex-wrap max-xlg:justify-center">
+            <section className="flex gap-5 max-xlg:flex-wrap justify-center">
                  {
                     offers.map((offer,index)=>{
                         return(

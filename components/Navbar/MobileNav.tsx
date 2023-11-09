@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import { FaPlus } from 'react-icons/fa';
+import {HiMiniBars3BottomLeft} from 'react-icons/hi2'
 
 const MobileNav = () => {
     const [activeNav, setActiveNav] = useState ('#')
@@ -20,13 +21,13 @@ const MobileNav = () => {
       }
     };
   return (
-    <section className={`xlg:hidden px-[72px] pt-[30px] max-xmd:p-[20px] max-xmd:pt-[40px] ${navClassName} bg-gradient z-[150] `}>
+    <section className={`xlg:hidden px-[72px] pt-[20px] max-xmd:p-[20px] h-[100px] xmd:h-[130px] ${navClassName} bg-gradient z-[150] `}>
             <section className='flex justify-between items-center'>
               <div className='max-xmd:w-[150px]'>
                 <img src="footerlogo.svg" alt="" />
               </div>
              <div onClick={toggleMenu} className=" text-[#0045A5] text-[32px] max-xsm:text-[24px] xlg:hidden cursor-pointer ">
-                 <FaPlus className={`transition-all duration-400 ease-in ${showMenu}`} />
+                 <HiMiniBars3BottomLeft className={`transition-all duration-400 ease-in ${showMenu}`} />
               </div>
             </section>
             <div className={`${navBarDisplay} flex-col justify-center items-center`}>

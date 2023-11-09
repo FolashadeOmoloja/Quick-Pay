@@ -79,7 +79,7 @@
   top: 0;
   right: 0;
   transition: all 400ms ease;
-  height: 144px;
+  /* height: 100px; */
   width: 100%;
 }
 
@@ -87,7 +87,7 @@
   transition: all 400ms ease;
 }
 .new_height{
-  height: 450px;
+  height: 500px;
 }
 
 /*offer hover effect*/
