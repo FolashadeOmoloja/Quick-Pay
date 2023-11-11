@@ -1,6 +1,8 @@
 "use client"
 import React, { useState } from 'react'
 import {RiRefreshLine} from 'react-icons/ri'
+import {FaThumbsUp} from 'react-icons/fa'
+import {HiOutlineThumbUp} from 'react-icons/hi'
 
 
 
@@ -48,7 +50,7 @@ const ContactButton = () => {
                     <RiRefreshLine />
                   </span>
                 ) : (
-                  <span className='text-white'>Sent &#10004;</span>
+                  <span className='text-white flex justify-center items-center gap-1'>Sent <span><HiOutlineThumbUp/></span></span>
                 )
               ) : (
                 'Send'
