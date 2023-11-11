@@ -56,14 +56,14 @@ const Testimonials = () => {
              
                    return (
                      <div
-                       className="relative flex flex-col text-center items-center p-6 pt-8 bg-[#F0F5F8] rounded-[20px] min-w-[350px] h-[428px] justify-between" 
+                       className="relative flex flex-col text-center items-center p-6 pt-8 bg-[#F0F5F8] rounded-[20px] min-w-[350px] max-xxsm:min-w-[280px] h-[428px] justify-between" 
                        key={index}
                      >
-                       <div className="mt-[-110px] max-h-[200px] w-[140px] h-[140px]">
+                       <div className="mt-[-110px] max-h-[200px] w-[140px] h-[140px] max-xxsm:w-[120px] max-xxsm:h-[120px]">
                          <img
                            src={user.img}
                            alt="img"
-                           className="max-h-[200px]" 
+                           className="max-h-[200px] max-xxsm:max-h-[150px]" 
                          />
                        </div>
                        <span className="mt-5 font-bold">{user.user}</span>
