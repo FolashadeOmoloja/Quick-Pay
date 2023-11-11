@@ -293,6 +293,25 @@ display: block;
   animation: companyDisplay3 4s linear  infinite;
 }
 
+/*spinner*/
+@keyframes spin {
+  0% {
+
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 2s linear  infinite;
+}
+
 
 :root {
 /* overflow-x: hidden; */
