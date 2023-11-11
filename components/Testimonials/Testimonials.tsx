@@ -1,6 +1,6 @@
 'use client'
 import {BsStarFill } from 'react-icons/bs'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 const users = [
 {
     img: 'user1.svg',
@@ -35,6 +35,20 @@ const Testimonials = () => {
     
         changeView(!view);
       };
+      const containerRef = useRef<HTMLDivElement>(null);
+
+      const handlePrevClick = () => {
+        if (containerRef.current) {
+          containerRef.current.scrollLeft -= containerRef.current.offsetWidth;
+        }
+      };
+    
+      const handleNextClick = () => {
+        if (containerRef.current) {
+          containerRef.current.scrollLeft += containerRef.current.offsetWidth;
+        }
+      };
+      
 
   return (
     <section  className="pt-[154px] bg-white pb-[100px] px-[72px] max-sm:p-[72px] max-xmd:p-[20px]">
@@ -42,11 +56,15 @@ const Testimonials = () => {
              <h3 className="text-[50px] text-[#333333] max-md:text-[30px] font-bold  max-sm:text-center">Our Testimonial</h3>
              <div className="w-[115px] h-[3px] bg-[#0045A5] mb-6 max-sm:mx-auto"></div>
              <p className="text-[#565252] font-semibold mb-[52px] max-sm:text-center">What Our Users Say</p>
-             <div className="flex gap-[80px] absolute right-0 top-[20px] max-sm:static max-sm:mb-7 ">
+             <div className="flex gap-[80px] absolute right-0 top-[20px] max-sm:hidden ">
                  <img src="leftbtn.svg" alt=""  className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handleClick}/>
                  <img src="rightbtn.svg" alt="" className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handleClick}/>
              </div>
-              <section className={`flex gap-5  max-xlg:overflow-x-scroll h-[590px] items-center  ${view?'flex-row-reverse':''}  transition ${transitionClass}`}>
+             <div className="flex gap-[80px] mb-7 sm:hidden ">
+                 <img src="leftbtn.svg" alt=""  className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handlePrevClick}/>
+                 <img src="rightbtn.svg" alt="" className='cursor-pointer w-full max-md:w-[30px] max-sm:mx-auto' onClick={handleNextClick}/>
+             </div>
+              <section className={`flex gap-5  max-xlg:overflow-x-scroll h-[590px] items-center  ${view?'flex-row-reverse':''}  transition ${transitionClass}`} ref={containerRef}>
                  {users.map((user, index) => {
                    const stars = [];
              
